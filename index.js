@@ -28,10 +28,10 @@ app.use(express.static (__dirname + '/www'));
 app.use(favicon (__dirname + '/www/images/favicon.ico'));
 app.set('view engine', 'ejs');
 
-var client_id		= process.env.FORGE_CLIENT_ID;
-var client_secret	= process.env.FORGE_CLIENT_SECRET;
+var client_id		= 'QQU4ihGdLoZEfLJWj9cbZaQkGy8Ha2zx';
+var client_secret	= 'dVS1qAC5px2FPwbv';
 var access_token	= '';
-var redirect_uri	= process.env.FORGE_CALLBACK_URL;
+var redirect_uri	= 'http://localhost:3000/api/forge/callback/oauth';
 
 var scope			= ['data:read', 'data:write'];
 var BASE_ENDPOINT	= 'https://developer.api.autodesk.com/photo-to-3d/v1';
